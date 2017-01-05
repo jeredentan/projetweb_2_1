@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="Style.css" rel="stylesheet">
+        <!-- Un peu de style pour la visualisation -->
+        <title> Mon CV personnel </title>
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Header -->
+            <header class="row">
+
+                <!-- Titre page -->
+                <div class="col-md-12" >
+                    <div class="col-md-5">
+                        <h1 class="font_0"  id="Titre_Principal" style="color:#72AB00;"> Dentan&nbsp;<span style="color:#fff"> Jeremie</span></h1>
+                        <h4 class="font_4" id="Titre_Principal1" style="color:#72AB00"> Etudiant en 2eme année à Telecom  </h4>
+
+                    </div><!-- Fin titre page -->
+
+                    <!-- Menu de navigation -->
+                    <div class="col-md-7" id="menu">
+                        <ul class="nav navbar-nav" id="navbar">
+
+
+                            <li> <a href="index.html" ><p  id="forme_titre_menu_1" class="titre_lien_nav" ><strong>Acceuil</strong> </p> </a></li>
+                            <li> <a href="CV.html" ><p  id="forme_titre_menu_2" class="titre_lien_nav" ><strong>Mon CV</strong> </p> </a></li>
+                            <li> <a href="ressources.html" ><p  id="forme_titre_menu_3" class="titre_lien_nav" ><strong>Ressources</strong> </p> </a></li>
+
+
+                        </ul>
+                    </div> <!-- Fin menu de nav -->
+                </div>
+            </header>
+
+            <!--Contenu principal -->
+
+            <div class="row">
+
+                <section class="col-md-12">  
+                    <div class="row" >
+                        <div class="col-sm-10" id="Telechargements_ressources"> 
+                            <h3 style=""> Téléchargements : </h3>
+                            <div id="ligne_dessous_titre1"></div>
+                            <div id="liens_ressources">
+                                <a href="Images/image_cv.jpg" download="CreativeJuiz_Background">Télécharger l'image</a>
+                                <p><a href="http://jeremy.lardon.free.fr/projet/projet.zip">Fichier zip</a></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <section class="col-md-12">   
+                    <div class="row" >
+                        <div class="col-sm-10" id="Animation_flash"> 
+                            <h3 style=""> Animation Flash</h3>
+                            <div id="ligne_dessous_titre2"></div>
+                            <div id="cadre_GIF">
+                                <a href="http://giphy.com/gifs/cat-space-5HSYaZTcRpYnS"><img  alt="mon GIF" src="http://i.giphy.com/5HSYaZTcRpYnS.gif" width="450" height="300"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-md-12">   
+                    <div class="row" >
+                        <div class="col-sm-10" id="Exemple_code"> 
+                            <h3 style=""> Code</h3>
+                            <div id="ligne_dessous_titre3"></div>
+                            <div id="texte_preformate">
+
+                                <pre>
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+
+public class Timer_rafraichissement {
+	static Timer createTimer ()
+	{
+		ActionListener action = new ActionListener ()
+		{
+			public void actionPerformed (ActionEvent event)
+			{
+				Gestion_base_de_donnee.rafraichirtableau();
+			}
+		};
+		return new Timer (240000, action);
+	} 
+}
+
+
+                                </pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+
+                <!--  Pied de page -->
+
+
+                <footer class="row">
+                    <div class="col-md-12" style="border-top:black dotted 1px;border-bottom:black 1px dotted;">
+                        Copyright Dentan Jeremie | Made with <strong>Bootstrap</strong>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+                </body>
+            </html>

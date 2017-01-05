@@ -1,0 +1,310 @@
+
+/* Code réalisé par Jeremie Dentan
+
+*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+
+    Sommaire :
+
+
+            0 - General
+
+            1 - Header
+
+            2 - Menu de navigation
+
+            3 - Contenu principal
+
+            4 - Footer
+
+
+
+
+
+/*------------------------------------------------------------------------------
+
+                                0 : General
+
+-------------------------------------------------------------------------------*/
+
+/*body {
+    background:url(Images/fond_space2.jpg);
+    color:white;
+    
+}*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+[class*="col-"], footer {
+    border-radius: 6px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.row {
+    margin-right: -15px;
+
+    margin-left: -15px;
+}
+
+
+/*------------------------------------------------------------------------------
+
+                                1 : Header
+
+-------------------------------------------------------------------------------*/
+#Titre_Principal,
+#Titre_Principal1{
+
+    float:right;
+
+
+}
+
+header{
+    background:black;
+
+
+
+}
+#header{
+    text-align:left;
+}
+
+/*------------------------------------------------------------------------------
+
+                            2 : Menu de navigation
+
+-------------------------------------------------------------------------------*/
+
+#menu{
+    display:inline-block;
+    position:relative;
+
+    padding-left:8%;
+    margin-top:1.5%;
+
+}
+
+.titre_lien_nav{
+    display:inline-block;
+
+
+}
+#navbar a{
+    color:#fff;
+    width:150px;
+    margin:6px;
+    border-top:#72AB00 3px solid;
+
+
+
+}
+
+#navbar a:hover,#navbr a:focus{
+    color:#72AB00;
+    background-color:#000;
+    border-top:#72AB00 6px solid;
+}
+#forme_titre_menu_1,
+#forme_titre_menu_2,
+#forme_titre_menu_3
+{
+    text-align: center; 
+    line-height: 22px;
+    font-size:22px;
+}
+
+
+
+/*------------------------------------------------------------------------------
+
+                        3 : Contenu principal 
+
+-------------------------------------------------------------------------------*/
+
+
+/*-----------------------  Index.html ----------------------------*/
+
+#Cadre_resume{
+    border:black 2px solid;
+
+    margin-left:20%;
+    margin-top:3%;
+border-radius:5px;
+        max-width:inherit;
+    width:60%;
+
+
+}
+#texte_descriptif{
+    text-indent: 5px;
+    border-radius:0px;
+    line-height:25px;;
+  
+
+}
+
+#photo_index{
+    border-right:1px black dotted;
+    border-radius:0px;
+}
+
+
+#Contacts{
+  width:70%;
+    margin-top:20px;
+      margin-left:15%;
+
+}
+
+
+
+/*-----------------------  CV.html ----------------------------*/
+
+
+
+
+#photo_identité{
+    padding-top:5px;
+    padding-bottom:5px;
+    max-width:100%;
+}
+
+#Cadre_CV{
+    margin-top:25px;
+    border:#72AB00  2px solid;
+    border-radius:6px;
+    width:70%;
+    margin-left:15%;
+}
+#texte-cadre-cv{
+    margin-top:5%;
+}
+#titre-cadre-cv{
+   margin-left:60%
+}
+#titre_formation,
+#titre_competences,
+#titre_loisirs{
+    color:white;
+    margin-right:50%;
+    margin-left:5%;
+    width:30%;
+    border-radius:0px;
+    background-color:#606;
+}
+#titre_formation,#titre_competences,#titre_loisirs,#formation,#competences,#loisirs{
+    margin-left:15%;
+   
+    
+}
+/*#formation,#titre_formation,#loisirs,#titre_loisirs{
+  margin-left:35%;
+}
+*/
+#competences,
+#formation
+{
+    margin-bottom:40px;
+}
+/*
+#formation,#loisirs{
+    width: 60%;
+    text-align:left;
+    border:1px solid #72AB00;
+    border-radius:2px;
+    line-height: 11px;
+}*/
+#formation,
+#loisirs,
+#competences
+{
+    text-align:left;
+   width:70%;
+    border:1px solid black;
+    border-radius:2px;
+    line-height: 11px;
+
+}
+
+
+/*-----------------------  Ressources.html ----------------------------*/
+
+#Telechargements_ressources,
+#Animation_flash,
+#Exemple_code{
+    margin-top:50px;
+    margin-left:10%;
+    text-align:left;
+
+}
+#liens_ressources{
+    margin-left:5%;
+
+}
+#cadre_GIF{
+
+    margin-top:5%;
+  
+    border-radius:6px;
+    width:446px;
+    height:300px;
+    margin-left:25%;
+
+}
+#ligne_dessous_titre1,
+#ligne_dessous_titre2,
+#ligne_dessous_titre3{
+    border-bottom:2px solid black;
+    width:90%;
+}
+#texte_preformate{
+    margin-top:5%;
+    width:90%;
+    height:50%;
+}
+
+/*----------------------------------------------------------------------------
+                                
+                           Footer
+
+----------------------------------------------------------------------------*/
+footer{
+    border-top:black dotted 1px;
+    border-bottom:black 1px dotted;
+    border-radius:0px;
+    margin-top:20px;
+
+}
+
+
+
+
+/*------------------------------------------------------------------------------
+
+                          Media Queries
+
+-------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 100%:
+    }
+    @media (min-width: 1200px) {
+        .container {
+            width: 100%;
+        }
+    }
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+        <link href="font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet">
+        <link href="Style.css" rel="stylesheet">
+
+        <title> Mon CV personnel </title>
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="row">
+
+                <div class="col-md-12" >
+                    <div class="col-md-5">
+                        <h1 class="font_0"  id="Titre_Principal" style="color:#72AB00;"> Dentan&nbsp;<span style="color:#fff"> Jeremie</span></h1>
+                        <h4 class="font_4" id="Titre_Principal1" style="color:#72AB00"> Etudiant en 2eme année à Telecom  </h4>
+
+                    </div>
+                    <div class="col-md-7" id="menu">
+                        <ul class="nav navbar-nav" id="navbar">
+                            
+
+                            <li> <a href="index.html"><p  id="forme_titre_menu_1" class="titre_lien_nav" ><strong>Accueil</strong> </p> </a></li>
+                            <li> <a href="CV.html" ><p  id="forme_titre_menu_2" class="titre_lien_nav" ><strong>Mon CV</strong> </p> </a></li>
+                            <li> <a href="ressources.html" ><p  id="forme_titre_menu_3" class="titre_lien_nav" ><strong>Ressources</strong> </p> </a></li>
+
+                              
+                        </ul>
+                </div> 
+                </div>
+
+
+            </header>
+
+        <div class="row">
+
+
+
+
+            <section class="col-md-12" >  
+
+                <div class="row" id="Cadre_resume" >
+
+                    <div class="col-md-4" >
+                
+                        <img class="img-circle" alt="Photo d'identité" id="photo_identité" src="Images/image_cv.jpg">
+                       <!-- <p style="color:#72AB00"><strong>DENTAN JEREMIE</strong></p>-->
+                        <p>
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/jeremie.dentan">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/profile/view?id=AAIAABad6Z4Bfztthye1HQISXnhZFrckHdR_EBU&trk=nav_responsive_tab_profile">
+                                <span class="fa fa-linkedin"></span>
+                            </a></p>
+                    </div>
+                    <div class="col-md-8" id="texte_descriptif">    
+                      
+                            <h3 style="border-bottom : 1px dotted #333; color:#72AB00">Etudiant en 2eme année à Télécom-Saint-Etienne</h3>
+                            <span class="fa fa-quote-left  fa-pull-left fa-border"> Eleve ingénieur en 2ème année à Télécom Saint-Etienne,j'étudie les Télécom cherche actuellement un stage dans le cadre de ma formation d'ingénieur.</span>  
+                    </div>
+ 
+
+
+                </div>
+            </section>
+
+            <!---                                                                                Formulaire de contact
+--><section class="col-md-12" >  
+            <div class="row" id="Contacts" >
+
+                <h1  style="margin-left:5%;text-align:left;" > Contacts :</h1>
+
+                <!-- Champ de texte 1(Prenom) -->
+                <form method="POST" action="formulaire.php">
+
+                    <div class="input-group" style="width:50%;margin-left:25%;">
+
+                        <label for="textarea" style="float:left;">Nom</label>
+                        <input type="text" name ="nom" class="form-control" onblur="verifPseudo(this)" >
+                    </div>
+
+
+
+                    <!-- Champ de texte 2 (Nom) -->
+                    <div class="input-group" style="width:50%;margin-left:25%;">
+
+                        <label for="textarea" style="float:left;">Email : </label>
+                        <input type="email" name="email" class="form-control" id="basic-url" onblur="verifMail(this)">
+                    </div>
+
+
+                    <!-- Champ de texte 3 (message) -->
+
+                    <div class="input-group" style="width:50%;margin-left:25%;">
+                        <label for="textarea" style="float:left;">Votre message :</label>
+                        <textarea id="textarea" name="message" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <div class="input-group" style="width:50%;margin-left:25%;margin-top:15px;">
+                        <input type="submit" style="color:black;" value="Envoyer" name="envoyer" >
+                    </div>
+                </form>
+            </div>
+            </section>
+
+
+
+        </div>
+
+        <footer class="row" >
+            <div class="col-md-12" >
+                Copyright Dentan Jeremie | Made with <strong>Bootstrap</strong>
+            </div>
+        </footer>
+
+        </div>
+    </body>
+    
+    
+    <script>
+
+        function surligne(champ, erreur)
+        {
+            if(erreur)
+                champ.style.backgroundColor = "#fba";
+            alert("Veuillez remplir correctement tous les champs");
+            else
+                champ.style.backgroundColor = "";
+        }
+
+        function verifPseudo(champ)
+        {
+            if(champ.value.length < 2 || champ.value.length > 25)
+            {
+                surligne(champ, true);
+                
+                return false;
+            }
+            else
+            {
+                surligne(champ, false);
+                return true;
+            }
+        }
+
+        function verifMail(champ)
+        {
+            var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+            if(!regex.test(champ.value))
+            {
+                surligne(champ, true);
+                return false;
+            }
+            else
+            {
+                surligne(champ, false);
+                return true;
+            }
+        }
+    </script>
